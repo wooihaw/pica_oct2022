@@ -26,7 +26,9 @@ while True:
     elif event == 'Send':
         sg.Popup(   f"Channel: {values['-channel-']}",
                     f"Vertical scale: {values['-vscale-']}",
-                    f"Vertical offset: {values['-voffset-']}"
+                    f"Vertical offset: {values['-voffset-']}",
+                    f"Timebase scale: {values['-tscale-']}",
+                    f"Timebase position: {values['-tpos-']}"
         )
 
 window.close()
