@@ -23,5 +23,7 @@ while True:
         break
     if event == 'Connect':
         window['Send'].update(disabled=False)
+    elif event == 'Send':
+        sg.Popup(f"Channel: {values['-channel-']}")
 
 window.close()
