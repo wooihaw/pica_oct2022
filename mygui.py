@@ -24,6 +24,9 @@ while True:
     if event == 'Connect':
         window['Send'].update(disabled=False)
     elif event == 'Send':
-        sg.Popup(f"Channel: {values['-channel-']}")
+        sg.Popup(   f"Channel: {values['-channel-']}",
+                    f"Vertical scale: {values['-vscale-']}",
+                    f"Vertical offset: {values['-voffset-']}"
+        )
 
 window.close()
