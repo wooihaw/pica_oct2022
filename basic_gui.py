@@ -12,7 +12,7 @@ layout = [  [sg.Text('Channel', size=text_size), sg.Combo(channels, default_valu
             [sg.Text('Vertical Offset', size=text_size), sg.Slider(range=(-5.0, 5.0), default_value=0.0, resolution=0.1, orientation='h', key='-voffset-', expand_x=True)],
             [sg.Text('Timebase scale', size=text_size), sg.Combo(tscales, key='-tscale-', default_value=tscales[3], expand_x=True)],
             [sg.Text('Timebase position', size=text_size), sg.Slider(range=(-5.0, 5.0), default_value=0.0, resolution=0.1, orientation='h', key='-tpos-', expand_x=True)],
-            [sg.Button('Send', size=button_size), sg.Button('Close', size=button_size)]
+            [sg.Button('Connect', size=button_size), sg.Button('Send', size=button_size), sg.Button('Close', size=button_size)]
 ]
 
 window = sg.Window('Oscilloscope', layout, element_justification='center')
