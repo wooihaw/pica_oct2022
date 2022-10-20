@@ -22,6 +22,6 @@ while True:
     if event in (sg.WIN_CLOSED, 'Close'):
         break
     if event == 'Connect':
-        window['Connect'].update(disabled=False)
+        window['Send'].update(disabled=False)
 
 window.close()
